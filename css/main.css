@@ -25,23 +25,34 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
+    box-sizing: border-box;
 }
 
 @media only screen and (max-width: 800px) {
     body {
-        background-image: url(../img/park.jpeg);
+        background-image: url('../img/park.jpeg');
+        font-size: 100%;
     }
 }
 
 @media only screen and (min-width: 200px) {
     body {
-        background-image: url(../img/park.jpeg);
+        background-image: url('../img/park.jpeg');
+        font-size: 80%;
     }
 }
 
+@media only screen and (min-width: 1100px) {
+    body {
+        background-image: url('../img/park.jpeg');
+        font-size: 120%;
+    }
+}
+
+
 #logo {
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -66,5 +77,96 @@ header h4 {
     text-align: center;
     font-family: Arial;
     text-decoration: none;
+
+}
+
+main h1 {
+    text-align: center;
+    color: #563e3f;
+    padding-top: 14em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+}
+
+
+main h2 {
+    text-align: center;
+    color: #22860e;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-top: 1em;
+
+}
+
+main p {
+    text-align: center;
+    color: #031400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+}
+
+#colors {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 50%;
+
+}
+
+#blocks {
+    width: 100%;
+    margin: auto;
+}
+
+#square1 {
+    width: 8em;
+    height: 8em;
+    background: #c30005;
+    display: inline-block;
+    border: 5px solid white;
+    margin: 20px;
+}
+
+#square2 {
+    width: 8em;
+    height: 8em;
+    background: #1E431E;
+    display: inline-block;
+    border: 5px solid white;
+    margin: 20px;
+
+
+}
+
+#square3 {
+    width: 8em;
+    height: 8em;
+    background: #e5e1d2;
+    display: inline-block;
+    border: 5px solid white;
+    margin: 20px;
+
+}
+
+#square4 {
+    width: 8em;
+    height: 8em;
+    background: #888686;
+    display: inline-block;
+    border: 5px solid white;
+    margin: 20px;
+
+}
+
+#square5 {
+    width: 8em;
+    height: 8em;
+    background: #563e3f;
+    display: inline-block;
+    border: 5px solid white;
+    margin: 20px;
 
 }
