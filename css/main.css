@@ -55,6 +55,10 @@ body {
     #logo { max-height: 60%; }
 } */
 
+header {
+    text-align: center;
+}
+
 header h4 {
     color: red;
     margin: auto;
