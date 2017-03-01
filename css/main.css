@@ -18,6 +18,14 @@ summary {
     display: block;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     background-image: url('../img/park.jpeg');
     background-position: center center;
@@ -62,13 +70,24 @@ body {
 
 }
 
+
+
+@media only screen and (max-width: 1100px) {
+    #logo {
+        max-width: 250px;
+    }
+}
+
+
+
+/*
 @media screen and (orientation: portrait) {
-    #logo { max-width: 60%; }
+    #logo { max-width: 100%; }
 }
 
 @media screen and (orientation: landscape) {
     #logo { max-height: 60%; }
-}
+} */
 
 header h4 {
     color: red;
@@ -112,13 +131,9 @@ main p {
 #colors {
     margin: 0 auto;
     width: 50%;
-
+    text-align: center;
 }
 
-#blocks {
-    width: 100%;
-    margin: auto;
-}
 
 #square1 {
     width: 8em;
@@ -171,59 +186,8 @@ main p {
 
 }
 
-@media only screen and (min-width: 800px) {
-    #square1 {
-        width: 6em;
-        height: 6em;
-    }
 
-    #square2 {
-        width: 6em;
-        height: 6em;
-    }
 
-    #square3 {
-        width: 15em;
-        height: 15em;
-    }
-
-    #square4 {
-        width: 15em;
-        height: 15em;
-    }
-
-    #square5 {
-        width: 15em;
-        height: 15em;
-    }
-}
-
-@media only screen and (min-width: 200px) {
-    #square1 {
-        width: 4em;
-        height: 4em;
-    }
-
-    #square2 {
-        width: 4em;
-        height: 4em;
-    }
-
-    #square3 {
-        width: 4em;
-        height: 4em;
-    }
-
-    #square4 {
-        width: 4em;
-        height: 4em;
-    }
-
-    #square5 {
-        width: 4em;
-        height: 4em;
-    }
-}
 @media only screen and (min-width: 1100px) {
     #square1 {
         width: 9em;
@@ -256,6 +220,7 @@ main p {
     width: 50%;
     padding-bottom: 30px;
     padding-top: 30px;
+    text-align: center;
 }
 
 #button1 {
@@ -263,6 +228,7 @@ main p {
     padding: 1em;
     background-color: #c30005;
     text-decoration: none;
+    margin: 0 auto;
 
 }
 
@@ -275,7 +241,7 @@ main p {
 }
 
 
-/* Underline From Center - green underline*/
+/* Underline From Center - green underline */
 .hvr-underline-from-center {
     display: inline-block;
     vertical-align: middle;
@@ -293,7 +259,7 @@ main p {
     left: 50%;
     right: 50%;
     bottom: 0;
-    background: #22860e;
+    background: #1e431e;
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -326,8 +292,7 @@ main p {
     font-weight: 700;
 }
 
-
-/* Underline From Center - red underline*/
+/* Underline From Center - button 2 */
 .hvr-underline-frm-center {
     display: inline-block;
     vertical-align: middle;
@@ -345,40 +310,7 @@ main p {
     left: 50%;
     right: 50%;
     bottom: 0;
-    background: /* Underline From Center - green underline*/
-    .hvr-underline-from-center {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .hvr-underline-frm-center::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 50%;
-        right: 50%;
-        bottom: 0;
-        background: #c30005;
-        height: 4px;
-        -webkit-transition-property: left, right;
-        transition-property: left, right;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-    }
-
-    .hvr-underline-from-center:hover::before,
-    .hvr-underline-from-center:focus::before,
-    .hvr-underline-from-center:active::before {
-        left: 0;
-        right: 0;
-    };
+    background: #c30005;
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
