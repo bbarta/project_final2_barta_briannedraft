@@ -1,23 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section
-summary {
-    display: block;
-}
-
 html {
     box-sizing: border-box;
 }
@@ -58,20 +38,6 @@ body {
 }
 
 
-#logo {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-
-}
-
-
-
 @media only screen and (max-width: 1100px) {
     #logo {
         max-width: 250px;
@@ -89,6 +55,10 @@ body {
     #logo { max-height: 60%; }
 } */
 
+header {
+    text-align: center;
+}
+
 header h4 {
     color: red;
     margin: auto;
@@ -102,7 +72,6 @@ header h4 {
 main h1 {
     text-align: center;
     color: #563e3f;
-    padding-top: 14em;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 
